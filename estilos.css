@@ -1,0 +1,13 @@
+body{
+    background-color: #000000;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#intro{
+    padding: 20px;
+    background-color: #353535;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
