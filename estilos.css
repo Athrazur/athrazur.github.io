@@ -122,6 +122,18 @@ body{
     margin-top: 5px;
 }
 
+#politicas {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    background-color: #353535;
+    color: white;
+}
+
 .hoja{
     /*border-style: solid;*/
     padding: 5px;
