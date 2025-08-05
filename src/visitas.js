@@ -27,8 +27,8 @@ async function getWebsiteId() {
 }
 
 async function incrementarVisitas(id_website) {
-    console.log("id_website:", id_website);
-    console.log("tipo dato:", typeof id_website);
+    console.log("id_website:", id_website); // Muestra el ID del sitio web en la consola.
+    console.log("tipo dato:", typeof id_website); // Verifica el tipo de dato del ID del sitio web.
     try {
         // Llama a la funcion SQL con el website_id como parametro.
         const { data, error } = await supabase.rpc('increment_visit', {
