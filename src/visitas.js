@@ -4,6 +4,7 @@ const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYm
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 const currentSiteName = window.location.hostname;
 
+// FUNCIONA
 async function getWebsiteId() {
     try {
         // Consulta la tabla 'websites' por el nombre del sitio.
@@ -26,6 +27,7 @@ async function getWebsiteId() {
     }
 }
 
+// DEPURAR
 async function incrementarVisitas(id_website) {
     console.log("id_website:", id_website); // Muestra el ID del sitio web en la consola.
     console.log("tipo dato:", typeof id_website); // Verifica el tipo de dato del ID del sitio web.
@@ -50,8 +52,11 @@ getWebsiteId().then(websiteId => {
   if (websiteId) {
     console.log('Website ID:', websiteId);
     // Usa el 'websiteId' para incrementar el contador
-    incrementarVisitas(websiteId);
+    incrementarVisitas(websiteId); //websiteId se cambio por 1 para pruebas
   } else {
     console.error('No se encontró el website_id para:', currentSiteName);
   }
 });
+
+// PRUEBAS
+//incrementarVisitas(1); // Llama a la función con un ID de sitio web de prueba (1) para pruebas.
